@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>xTrade</title>
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/scrollbar.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel=icon href=./assets/images/fav.png sizes="20x20" type="image/png">
+    <!-- Responsive -->
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <!--Page Wrapper-->
+    <header class="d-md-none">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo text-right">
+                    <a href="#"><img src="assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page-wrapper">
+
+
+        <div id="content-section">
+
+            <!--Introduction Section-->
+            <section class="section introduction" id="introduction">
+                <div class="sec-title">
+                    <i class="icon far fa-clone"></i>
+                    <h2>Intoduction</h2>
+                </div>
+                <div class="sec-content">
+                    <h2>xTrade - Online Forex Trading Flutter App UI Kit</h2>
+                    <div class="separator"></div>
+                    <strong>Last Updated :</strong> 29-03-2023<br>
+                    <strong>By :</strong> <a href="https://codecanyon.net/user/appdevsx" class="cl-2" style="text-decoration: none" target="_blank">AppDevs - Software Solutions</a><br>
+                    <strong>Email :</strong> support@appdevs.net <br>
+
+                    <br>
+
+                    <strong> Introduction: </strong></br>
+                    <h5>
+                        xTrade is a full application template of Online Forex Trading. The foreign exchange market is a global decentralized or over-the-counter market for the trading of currencies. This market determines foreign exchange rates for every currency. It includes all aspects of buying, selling and exchanging currencies at current or determined prices. If you are interested to develop your own Online Forex Trading Android and iOS app. So xTrade is perfect for yours. It is full application UI KIT developed by Flutter. It contains 35+ awesome screens with various kind of UI. It's made a lot easier for all developers. Anyone can run apps by following the project instructions. So all features are given below:                    </h5>
+                    </p>
+
+                </div>
+
+            </section>
+            <!--Requirements-->
+            <section class="section css-structure" id="server">
+                <div class="sec-title">
+                    <i class="fas fa-server"></i>
+                    <h2>Requirements</h2>
+                </div>
+                <div class="sec-content">
+
+                    <p>To customised this project you should have Flutter and Dart installed and configured effectively on your gadget <a href="https://flutter.dev/docs/get-started/install" target="_blank"> Install Flutter</a> Set up your editor Install
+                        the <a href="https://flutter.dev/docs/get-started/editor?tab=androidstudio"> Flutter and Dart Plugins.</a></br>
+                        </br>
+                        <strong>Get Started:</strong></br>
+
+                        <strong>a.</strong> Unzip the flies folder and open it. There have source code name as xtrade-source-code, then use your preferred IDE <span class="cl-1">(Android Studio / Visual Code / IntelliJ)</span> to open the project.</br>
+                        </br>
+
+                        <strong>b.</strong> Go to <span class="folder-name">/assets/images/icon.png</span> and replace it with your logo or app icon</br>
+                        <strong> Note: </strong> This logo used in the splash screen only, not in the app icon</br>
+                        </br>
+
+            </section>
+
+
+
+            <!--For Android Configuration-->
+            <section class="section css-structure" id="setup">
+                <div class="sec-title">
+                    <i class="fas fa-cog"></i>
+                    <h2>For Android Configuration</h2>
+                </div>
+
+                <div class="sec-content">
+                    <h2 class="my-40">Get Dependencies:</h2>
+                    <ol>
+                        <li>
+                            <span class="d-block mb-20">Run the command: </span>
+                            <pre>flutter pub get</pre>
+                        </li>
+                    </ol>
+                    <h2 class="my-40">Change Package Name:</h2>
+                    <ol>
+                        <li>If you want to change the package name following the next steps</li>
+
+                        <li>
+                            Open <span class="folder-name">/android/app/build.gradle</span> and change the package name</br>
+
+                            <pre style="margin: 30px 0"><ul>
+										<li>defaultConfig {</li>
+										<li><span>applicationId "<REPLACE WITH YOUR PACKAGE NAME>" // this is the package name</span></li>
+										<li><span>minSdkVersion 25</span></li>
+										<li><span>targetSdkVersion 33</span></li>
+										<li><span>versionCode flutterVersionCode.toInteger()</span></li>
+										<li><span>versionName flutterVersionName</span></li>
+										<li><span>testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"</span></li>
+										<li><span>multiDexEnabled true</span></li>
+										<li>}</li>
+									</ul></pre>
+                        </li>
+
+
+                        <li>Open <span class="folder-name">/android/app/src/main/AndroidManifest.xml</span> , <span class="folder-name">/android/app/src/profil/AndroidManifest.xml</span>, <span class="folder-name">/android/app/src/debug/AndroidManifest.xml</span>                            and specify your:</li>
+
+                        <li>Open <span class="folder-name">/android/app/src/main/kotlin/MainActivity.kt</span> and change the package name</br>
+                    </ol>
+                </div>
+
+            </section>
+            <!--iOS Configuration-->
+            <section class="section css-structure" id="ios-setup">
+                <div class="sec-title">
+                    <i class="fas fa-cog"></i>
+                    <h2>iOS Configuration</h2>
+                </div>
+
+                <div class="sec-content">
+
+                    <p>Opt-in to the preview of the embedded view by adding a boolean property to the app's <span class="folder-name">Info.plist</span> file with the key <span class="folder-name">io.flutter.embedded_views_preview</span> and the value
+                        <span class="cl-1">YES</span>.</p>
+                    <ol>
+                        <li>
+                            Click the Get dependencies or Packages get to install the libraries from <span class="folder-name">pubspecs.yaml</span> file.
+                        </li>
+                        <li>
+                            Open the simulator to run <span class="cl-1">iOS</span> or <span class="cl-1"> Android</span> (as the step above)
+
+                        </li>
+                        <li>
+                            Then press the run button to start the project (you can still open multi simulator at the same time)
+                        </li>
+                    </ol>
+                </div>
+
+            </section>
+
+            <!--Run & Build:-->
+            <section class="section css-structure" id="dashboard">
+                <div class="sec-title">
+                    <i class="fas fa-cog"></i>
+                    <h2> Build & Run:</h2>
+                </div>
+
+                <div class="sec-content">
+                    <h2 class="my-40">Run the Application:</h2>
+                    <ol>
+                        <li>
+                            In the target selector, select an Android device for running the app. If none are listed as available, select <b>Tools> Android > AVD Manager</b> and create one there. For details, see <a href="https://developer.android.com/studio/run/managing-avds"
+                                target="_blank"> Managing AVDs</a>. Click the run icon in the toolbar, or invoke the menu item Run > Run. Locate the main Android Studio toolbar:
+                        </li>
+                        <br>
+                        <li>
+                            <span class="d-block">If you don't use Android Studio or IntelliJ you can use the command line to run your application using the following command: </span>
+                            <br>
+                            <pre>flutter run</pre>
+                            <img src="./assets/images/run_app.png" alt="images" style="max-width:100%">
+                        </li>
+                    </ol>
+
+                </div>
+            </section>
+
+            <!--Install & Release App:-->
+            <section class="section css-structure" id="settings">
+                <div class="sec-title">
+                    <i class="fas fa-cog"></i>
+                    <h2>Install and Release App:</h2>
+                </div>
+
+                <div class="sec-content">
+                    <h2 class="my-40">Run the Application:</h2>
+                    <ol>
+                        <li>
+                            After you make all your changes and customizations save all your project, Open the console, navigate to your project folder and execute the following command to build your app:
+                            <pre style="margin-top: 10px;">flutter build apk --release</pre>
+                        </li>
+                        <br>
+                        <li>
+                            If you are deploying the app to the Play Store, it's recommended to use app bundles or split the APK to reduce the APK size.
+                        </li>
+                    </ol>
+                    <h2 class="my-40">Build and Install App:</h2>
+                    <ol>
+                        <li>
+                            To generate an app bundle, run:
+                            </br>
+                            </br>
+                            <pre>flutter build appbundle --target-platform android-arm,android-arm64,android-x64</pre> Learn more on <a href="https://developer.android.com/guide/app-bundle" target="_blank">https://developer.android.com/guide/app-bundle</a>
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            To split the APKs per ABI, run:
+                            <br>
+                            <br>
+                            <pre>flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi</pre> Learn more on <a href="https://developer.android.com/studio/build/configure-apk-splits#confi" target="_blank"> https://developer.android.com/studio/build/configure-apk-splits#confi </a>
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            If you want to upload your application on Google Play you must sign it before uploading, generate a signing key by running the following command:
+                            <br>
+                            <br>
+                            <pre data-lang="" class=" language-none"><code class="lang- language-none">keytool -genkey -v -keystore android/app/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code></pre>
+                        </li>
+                        <br>
+                        <br>
+                        <li>
+                            Reference the keystore from the app: Create a file named <span class="folder-name">appdir/android/key.properties</span> that contains a reference to your keystore:<br><br>
+                            <pre>storePassword=password from previous step<br>keyPassword=password from previous step<br>keyAlias=key<br>storeFile=location of the key store file, e.g. /Users/user name/key.jks</pre>
+                        </li><br><br>
+                        <li>
+                            Go to <span class="folder-name">android/app/build.gradle</span><br><br>
+                            <pre>def keystorePropertiesFile = rootProject.file("key.properties")<br>def keystoreProperties = new Properties()<br>keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+								<br>
+								<ul>
+									<li>signingConfigs {</li>
+									<li><span>release {</span></li>
+									<li><span><span>keyAlias keystoreProperties['keyAlias']</span></span></li>
+									<li><span><span>keyPassword keystoreProperties['keyPassword']</span></span></li>
+									<li><span><span>storeFile file(keystoreProperties['storeFile'])</span></span></li>
+									<li><span><span>storePassword keystoreProperties['storePassword']</span></span></li>
+									<li><span>}</span></li>
+									<li>}</li>
+									<li>buildTypes {</li>
+									<li><span>release {</span></li>
+									<li><span><span>signingConfig signingConfigs.release</span></span></li>
+									<li><span>}</span></li>
+									<li>}</li></ul></pre>
+                        </li>
+
+                    </ol>
+                </div>
+
+            </section>
+
+
+            <!--Support-->
+            <section class="section support" id="support">
+                <div class="sec-title"><i class="fas fa-headset"></i>
+                    <h2>Support</h2>
+                </div>
+                <div class="sec-content">
+                    <br>
+                    <h3>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. Just let us know, We will assist you. Contact us at support center.</h3>
+
+                    <p>Email Us : <span class="cl-1">support@appdevs.net</span> </p>
+
+                </div>
+
+            </section>
+        </div>
+        <!--Sidebar-->
+        <aside id="sidebar">
+
+            <div class="menu-box">
+                <div class="logo text-right">
+                    <a href="#"><img src="assets/images/logo.png" class="logoimg" alt=""></a>
+                    <h1 class="titlepart text-center">xTrade - v2.0</h1>
+                </div>
+                <!--Menu Box-->
+                <!--Sticky Menu-->
+                <nav class="sticky-menu">
+                    <ul>
+                        <li class="current"><a href="#introduction">Introduction </a></li>
+                        <li><a href="#server">Requirements</a></li>
+                        <li><a href="#setup">Android Configuration</a></li>
+                        <li><a href="#ios-setup">iOS Configuration</a></li>
+                        <li><a href="#dashboard">Build & Run</a></li>
+                        <li><a href="#settings">Install & Release</a></li>
+                        <li><a href="#support">Support </a></li>
+                    </ul>
+                </nav>
+                <div class="copyright">Copyright &copy; <a href="https://appdevs.net">AppDevs</a> 2021-2023</div>
+            </div>
+        </aside>
+        <!--Sidebar-->
+
+    </div>
+        <!--End pagewrapper-->
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.nav.js"></script>
+        <script src="assets/js/jquery.scrollTo.js"></script>
+        <script src="assets/js/scrollbar.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script>
+            $(document).on('ready', function() {
+                $('.menu-toggle').on('click', function() {
+                    $(this).toggleClass('active');
+                    $('#sidebar').toggleClass('active');
+                    $('.overlay').toggleClass('active');
+                })
+                $('.overlay').on('click', function() {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                    $('.menu-toggle').removeClass('active');
+                })
+            });
+        </script>
+</body>
+
+</html>
